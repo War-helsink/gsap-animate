@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "GSAP ScrollTrigger Demo",
+	title: "ScrollTrigger Demo",
 };
 
 export default function ScrollLayout({
