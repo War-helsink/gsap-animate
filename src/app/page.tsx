@@ -1,7 +1,7 @@
 import { Header } from "@/widgets/header";
 
-const Home: React.FC = () => {
+const RootPage: React.FC = () => {
 	return <Header />;
 };
 
-export default Home;
+export default RootPage;

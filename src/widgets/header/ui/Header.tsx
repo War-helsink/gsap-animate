@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { NavButton } from "@/shared/ui";
+import { routesConfig } from "@/shared/config";
 
 export const Header: React.FC = () => {
 	return (
@@ -21,7 +22,10 @@ export const Header: React.FC = () => {
 					</Link>
 				</div>
 				<div className="flex gap-x-12">
-					<NavButton href="/scroll">Scroll</NavButton>
+					<NavButton href={routesConfig.scroll}>Scroll</NavButton>
+					<NavButton href={routesConfig.horizontalScroll}>
+						Horizontal Scroll
+					</NavButton>
 				</div>
 				<div className="flex-1" />
 			</nav>
