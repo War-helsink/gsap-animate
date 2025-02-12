@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { NavButton } from "@/shared/ui";
+import { NavLink } from "@/shared/ui";
 import { routesConfig } from "@/shared/config";
 
 export const Header: React.FC = () => {
@@ -22,10 +22,10 @@ export const Header: React.FC = () => {
 					</Link>
 				</div>
 				<div className="flex gap-x-12">
-					<NavButton href={routesConfig.scroll}>Scroll</NavButton>
-					<NavButton href={routesConfig.horizontalScroll}>
+					<NavLink href={routesConfig.scroll}>Scroll</NavLink>
+					<NavLink href={routesConfig.horizontalScroll}>
 						Horizontal Scroll
-					</NavButton>
+					</NavLink>
 				</div>
 				<div className="flex-1" />
 			</nav>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/shared/lib/utils";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { NavButton } from "@/shared/ui";
+import { NavLink } from "@/shared/ui";
 
 export interface NavMenuProps {
 	text: string;
@@ -47,13 +47,13 @@ export const NavMenu: React.FC<NavMenuProps> = ({ text, menuItems }) => {
 								<menuItem.icon className="size-6 text-gray-600 group-hover:text-indigo-600" />
 							</div>
 							<div className="flex-auto">
-								<NavButton
+								<NavLink
 									href={menuItem.href}
 									className="block font-semibold text-gray-900"
 								>
 									{menuItem.title}
 									<span className="absolute inset-0" />
-								</NavButton>
+								</NavLink>
 								<p className="mt-1 text-gray-600">{menuItem.description}</p>
 							</div>
 						</div>
