@@ -2,9 +2,9 @@ class Routes {
 	//Root
 	readonly root = "/";
 
-	//Scroll
+	readonly home = "/home";
 	readonly scroll = "/scroll";
-	readonly horizontalScroll = "/horizontal-scroll"
+	readonly horizontalScroll = "/horizontal-scroll";
 }
 
 export const routesConfig = new Routes();

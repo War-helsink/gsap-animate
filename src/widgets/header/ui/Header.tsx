@@ -22,6 +22,7 @@ export const Header: React.FC = () => {
 					</Link>
 				</div>
 				<div className="flex gap-x-12">
+					<NavLink href={routesConfig.home}>Home</NavLink>
 					<NavLink href={routesConfig.scroll}>Scroll</NavLink>
 					<NavLink href={routesConfig.horizontalScroll}>
 						Horizontal Scroll

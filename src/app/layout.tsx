@@ -25,11 +25,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} overflow-hidden antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} overflow-hidden antialiased w-dvw h-dvh`}
 			>
-				<TransitionProvider>
-					{children}
-				</TransitionProvider>
+				<TransitionProvider>{children}</TransitionProvider>
 			</body>
 		</html>
 	);
